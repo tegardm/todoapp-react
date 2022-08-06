@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    .myButton {
+        @apply text-center rounded px-4 py-3 bg-gradient-to-r from-green-400 to-blue-500 hover:bg-primary transition-all text-custom-white font-semibold self-center m-auto
+    }
+}
