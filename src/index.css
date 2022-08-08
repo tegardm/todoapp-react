@@ -19,6 +19,6 @@ code {
 
 @layer components {
     .myButton {
-        @apply text-center rounded px-4 py-3 bg-gradient-to-r from-green-400 to-blue-500 hover:bg-primary transition-all text-custom-white font-semibold self-center m-auto
+        @apply text-center rounded px-2 py-2 bg-gradient-to-r text-sm from-green-400 to-blue-500 transition-all text-custom-white font-semibold self-center m-auto hover:brightness-75 
     }
 }

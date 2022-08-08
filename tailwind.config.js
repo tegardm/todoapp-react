@@ -18,6 +18,9 @@ module.exports = {
         'custom-light-gray': '#f7f7f7',
         'custom-border-gray': '#eeeeee',
         'custom-footer-bg': '#1d2124',
+      },
+      fontFamily : {
+        'poppins' : ['Poppins']
       }
     },
   },

@@ -4,7 +4,6 @@ import { useState } from 'react'
 
 const FieldInput = ({getTodo}) => {
 
-    console.log(new Date().toDateString())
     
 
   const [selectOption, setSelectOption] = useState({
@@ -12,7 +11,8 @@ const FieldInput = ({getTodo}) => {
     theTitle : '',
     theDesc : '',
     theOption : 'Sangat Penting',
-    theDate : new Date().toDateString()
+    theDate : new Date().toDateString(),
+    theComplete : false
   })
 
   useEffect(() => {
@@ -28,10 +28,12 @@ const FieldInput = ({getTodo}) => {
       getTodo(selectOption)
 
     setSelectOption({
+        theId : Math.floor(Math.random() * 349857389437),
         theDesc : '',
         theTitle : '',
         theOption : 'Sangat Penting',
-        theDate : new Date().toDateString()
+        theDate : new Date().toDateString(),
+        theComplete : false
     })
      }
   }
